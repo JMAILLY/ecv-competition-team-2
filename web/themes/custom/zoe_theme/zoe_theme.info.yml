@@ -1,0 +1,17 @@
+name: zoe_theme
+type: theme
+description: "Thème starter de Zoé"
+core: 8.x
+libraries:
+  - zoe_theme/zoe_theme
+libraries-override:
+  system/base: false
+stylesheets-remove:
+  - "@stable/css/style.css"
+base_theme: stable
+regions:
+  header: Header
+  navigation: Navigation
+  content: Content
+  prefooter: Prefooter
+  footer: Footer

@@ -1,0 +1,12 @@
+/*-----------------------------
+    COMPOSANTS
+-----------------------------*/
+
+.btn {
+  @include btn;
+}
+
+// Form
+input[type="submit"] {
+  @include btn;
+}

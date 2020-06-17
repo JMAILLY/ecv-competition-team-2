@@ -1,0 +1,6 @@
+name: "Informations du site"
+type: module
+description: "Principales informations du site (Adresse, numéro de téléphone, etc.)"
+core: 8.x
+package: "Custom"
+configure: informations_site.informations_admin_settings

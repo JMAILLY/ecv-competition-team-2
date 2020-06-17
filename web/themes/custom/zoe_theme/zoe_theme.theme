@@ -1,0 +1,44 @@
+<?php
+
+use \Drupal\block\Entity\Block;
+
+
+/*---------------------------
+
+    PREPROCESS DE PAGE
+
+---------------------------*/
+
+function zoe_theme_preprocess_page(&$variables)
+{
+
+    // Navigation Principale
+    $block = Block::load('navigationprincipale');
+    $variables['nav_principal'] = \Drupal::entityTypeManager()->getViewBuilder('block')->view($block);
+
+    // Informations site
+    $config = \Drupal::config('system.site');
+    $variables['site_name'] = $config->get('name');
+    $variables['site_slogan'] = $config->get('slogan');
+
+    $config_custom = \Drupal::config('informations_site.settings');
+    $variables['site_number'] = $config_custom->get('number');
+    $variables['site_street'] = $config_custom->get('street');
+    $variables['site_zip_code'] = $config_custom->get('zip_code');
+    $variables['site_city'] = $config_custom->get('city');
+    $variables['site_facebook'] = $config_custom->get('facebook');
+    $variables['site_instagram'] = $config_custom->get('instagram');
+    $variables['site_twitter'] = $config_custom->get('twitter');
+    $variables['site_linkedin'] = $config_custom->get('linkedin');
+}
+
+/*---------------------------
+
+    PREPROCESS DE NODE
+
+---------------------------*/
+
+function zoe_theme_preprocess_node(&$variables)
+{
+    $variables['title'] = $variables['label'];
+}

@@ -1,0 +1,9 @@
+informations_site.informations_admin_settings:
+  path: "/admin/config/informations_site"
+  defaults:
+    _form: '\Drupal\informations_site\Form\ModuleConfigurationForm'
+    _title: "Informations du site"
+  requirements:
+    _permission: "access administration pages"
+  options:
+    _admin_route: TRUE

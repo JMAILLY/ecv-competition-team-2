@@ -1,0 +1,50 @@
+/*-----------------------------
+    VARIABLES
+-----------------------------*/
+/*-----------------------------
+    MIXINS
+-----------------------------*/
+/*-----------------------------
+    GENERAL
+-----------------------------*/
+body {
+  color: #080808;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif; }
+
+/*-----------------------------
+    COMPOSANTS
+-----------------------------*/
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid #93c1b6;
+  background-color: #93c1b6;
+  cursor: pointer; }
+  .btn:hover, .btn:focus {
+    color: #93c1b6;
+    background-color: transparent; }
+
+input[type="submit"] {
+  display: inline-block;
+  padding: 10px 30px;
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid #93c1b6;
+  background-color: #93c1b6;
+  cursor: pointer; }
+  input[type="submit"]:hover, input[type="submit"]:focus {
+    color: #93c1b6;
+    background-color: transparent; }
+
+/*-----------------------------
+    HEADER
+-----------------------------*/
+.header__menu ul {
+  margin: 0;
+  padding: 0; }
+
+.header__menu li {
+  list-style: none; }
