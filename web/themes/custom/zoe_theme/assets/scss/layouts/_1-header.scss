@@ -3,14 +3,26 @@
 -----------------------------*/
 
 .header {
+  display: flex;
+  align-items: center;
+
   &__menu {
     ul {
+      display: flex;
+      flex-wrap: wrap;
       margin: 0;
       padding: 0;
     }
 
     li {
+      margin: 5px;
       list-style: none;
+    }
+
+    a {
+      padding: 5px;
+      color: $text_color;
+      text-decoration: none;
     }
   }
 }
